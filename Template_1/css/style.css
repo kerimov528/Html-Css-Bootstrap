@@ -1,0 +1,138 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ --open-sans: 'Open Sans', sans-serif;
+ --redToblue: linear-gradient(to right, #ee1c6f, #242c99);
+ --blueTored: linear-gradient(to right, #242c99, #ee1c6f);
+ --min-height: 982px;
+}
+
+/* header  */
+
+header {
+ height: max-content;
+ padding: 2rem 4rem 10rem;
+ background: url(../img/bg.jpg);
+}
+header div.container-fluid {
+ padding-top: -1rem;
+}
+header div.container-fluid h1,
+header div.container-fluid h4 {
+ font-size: 8rem;
+ letter-spacing: 6px;
+ color: #fff;
+}
+header div.container-fluid h4 {
+ font-size: 1.5rem;
+}
+header div.cosmos__img {
+ height: 20rem;
+ overflow: hidden;
+}
+header div.cosmos__img img {
+ object-fit: contain;
+}
+.header__footer p {
+ max-width: 28rem;
+ margin: 0 auto;
+ color: #fff;
+}
+
+/* section 1 */
+
+main section.section-1 {
+ height: max-content;
+ background: var(--blueTored);
+ padding: 3rem 4rem;
+}
+main section.section-1 h2 {
+ font-size: 3rem;
+ line-height: 1.1;
+ font-weight: 400;
+}
+section.section-1 .grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-auto-rows: max-content;
+ gap: 0.8rem;
+ margin-top: 2rem;
+}
+section.section-1 .grid .box {
+ border-radius: 1rem;
+ background-color: #fff;
+ padding: 2rem;
+}
+section.section-1 .grid .box .col-2 .img__box {
+ width: 4.4rem;
+ height: 4.4rem;
+ background-color: #ee1c6f;
+ border-radius: 50%;
+ position: relative;
+}
+section.section-1 .grid .box .col-2 img {
+ width: 3.5rem;
+ height: 3.5rem;
+ border-radius: 50%;
+}
+section.section-1 .grid .box .col-10 p {
+ max-width: 90%;
+ color: #111;
+ font-size: 1rem;
+ line-height: 1.6;
+}
+section.section-1 .picture__box {
+ width: 60rem;
+ height: 38rem;
+ background: url('../img/gfgf-min.jpg') no-repeat;
+ background-size: cover;
+ background-position: 87% 50%;
+ position: relative;
+ bottom: -20rem;
+ border-radius: 1rem;
+}
+section.section-1 .picture__box .text__box {
+ width: 33rem;
+ height: 29rem;
+ background-color: #fff;
+ box-shadow: -4px 10px 20px #1111;
+ border-left: 0.8rem solid #ee1c6f;
+ border-radius: 1.25rem;
+ bottom: -20rem;
+ right: -10rem;
+ padding: 4rem 2rem;
+}
+section.section-1 .picture__box .text__box h2 {
+ max-width: 70%;
+ font-weight: 400;
+ font-size: 1.875rem;
+ line-height: 1.2;
+}
+section.section-1 .picture__box .text__box h6 {
+ font-weight: 400;
+ font-size: 1.275rem;
+ line-height: 1.2;
+}
+section.section-1 .picture__box .text__box button {
+ width: 13rem;
+ border: 3px solid #ee1c6f;
+ border-radius: 2rem;
+ padding: 1rem 3rem;
+ bottom: -6rem;
+ position: relative;
+}
+section.section-1 .picture__box .text__box button:hover {
+ background-color: #111;
+ color: #fff;
+ border: none;
+}
+/* section 2  */
+
+section.section-2 {
+ height: 100vh;
+ background-color: #f2f2f2;
+}
