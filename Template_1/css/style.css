@@ -86,7 +86,7 @@ section.section-1 .grid .box .col-10 p {
  line-height: 1.6;
 }
 section.section-1 .picture__box {
- width: 60rem;
+ width: 80%;
  height: 38rem;
  background: url('../img/gfgf-min.jpg') no-repeat;
  background-size: cover;
@@ -96,8 +96,8 @@ section.section-1 .picture__box {
  border-radius: 1rem;
 }
 section.section-1 .picture__box .text__box {
- width: 33rem;
- height: 29rem;
+ width: 40%;
+ height: max-content;
  background-color: #fff;
  box-shadow: -4px 10px 20px #1111;
  border-left: 0.8rem solid #ee1c6f;
@@ -105,6 +105,7 @@ section.section-1 .picture__box .text__box {
  bottom: -20rem;
  right: -10rem;
  padding: 4rem 2rem;
+ margin-bottom: 9rem;
 }
 section.section-1 .picture__box .text__box h2 {
  max-width: 70%;
@@ -122,17 +123,197 @@ section.section-1 .picture__box .text__box button {
  border: 3px solid #ee1c6f;
  border-radius: 2rem;
  padding: 1rem 3rem;
- bottom: -6rem;
- position: relative;
+ margin-top: 6rem;
 }
 section.section-1 .picture__box .text__box button:hover {
  background-color: #111;
+ border-color: #111;
  color: #fff;
- border: none;
 }
 /* section 2  */
 
 section.section-2 {
  height: 100vh;
  background-color: #f2f2f2;
+}
+
+/* section 3  */
+
+section.section-3 {
+ height: max-content;
+ background: url('../img/bg-img.jpg');
+ background-size: cover;
+ padding: 4rem 7rem 10rem;
+}
+section.section-3 .text__box h3 {
+ font-size: 3.75rem;
+ letter-spacing: 5px;
+ margin: 5rem 0 10rem;
+}
+section.section-3 .grid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: 22rem;
+ gap: 2rem;
+}
+section.section-3 .grid .box {
+ background-color: #fff;
+ border-radius: 1rem;
+ padding: 3.125rem 1.875rem 1.875rem;
+}
+section.section-3 .grid .box h3 {
+ font-size: 3rem;
+ font-weight: 700;
+ color: #ee1c6f;
+}
+section.section-3 .grid .box p {
+ font-size: 1rem;
+ line-height: 1.8;
+ font-style: italic;
+}
+section.section-3 .grid .box a,
+section.section-4 a {
+ display: block;
+ width: max-content;
+ margin: 0 auto;
+ padding: 0 0 0.5rem;
+ border-bottom: 3px solid #ee1c6f;
+ border-width: 3px;
+ color: #000;
+ text-decoration: none;
+ font-size: 1.25rem;
+ font-weight: 700;
+}
+section.section-3 .grid .box a:hover,
+section.section-4 a:hover {
+ border-color: #000;
+ color: #ee1c6f;
+}
+
+/* section 4  */
+
+section.section-4 {
+ height: 200vh;
+ background-color: #f2f2f2;
+ padding: 4rem 6rem;
+}
+section.section-4 h2 {
+ font-weight: 400;
+ font-size: 3rem;
+ line-height: 1.1;
+ letter-spacing: 3px;
+}
+section.section-4 .grid {
+ display: grid;
+ width: 80%;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: repeat(2, max-content);
+ gap: 2rem 3rem;
+ justify-content: center;
+ margin: 2rem auto 0;
+}
+section.section-4 .grid .box {
+ background-color: #fff;
+ border-radius: 1rem;
+ border-left: 0.8rem solid #ee1c6f;
+ box-shadow: -0.3rem 1rem 2rem rgb(200, 200, 200);
+ padding: 2rem 2rem;
+}
+section.section-4 .grid .box span {
+ font-size: 4.5rem;
+ color: #111;
+}
+section.section-4 .grid .box h4 {
+ font-weight: 700;
+ font-size: 1.5rem;
+ line-height: 1.2;
+}
+section.section-4 .grid .box p {
+ max-width: 22rem;
+ font-style: italic;
+ line-height: 1.8;
+}
+section.section-4 .grid .box a {
+ margin: 0;
+ padding: 0;
+ font-size: 1rem;
+}
+footer {
+ height: max-content;
+ background: var(--redToblue);
+ padding: 4rem 6rem;
+}
+footer .container .col-12 {
+ padding: 2rem;
+ color: #fff;
+}
+footer .col-12 h2 {
+ font-size: 3rem;
+ line-height: 1.1;
+ font-weight: 400;
+}
+footer .col-12 p {
+ font-weight: 700;
+ line-height: 1.8;
+ font-style: italic;
+ font-size: 1.125rem;
+}
+footer .col-12 h6 {
+ line-height: 2;
+ font-size: 1rem;
+}
+footer .col-12 button {
+ color: #ee1c6f;
+ font-weight: 700;
+ letter-spacing: 3px;
+ font-size: 1.25rem;
+}
+
+/* applies to medium devices */
+@media screen and (max-width: 992px) {
+ html {
+  font-size: 14px;
+ }
+ section.section-3 .grid {
+  grid-template-columns: repeat(2, 1fr);
+ }
+ section.section-1 .picture__box {
+  width: 100%;
+ }
+ section.section-1 .picture__box .text__box {
+  bottom: -20rem;
+  right: auto;
+ }
+}
+
+/* applies to small devices */
+@media screen and (max-width: 768px) {
+ html {
+  font-size: 12px;
+ }
+ section.section-1 .grid {
+  grid-template-columns: repeat(1, 1fr);
+ }
+ section.section-3 .grid {
+  grid-template-columns: repeat(1, 1fr);
+ }
+ header div.container-fluid h1 {
+  font-size: 6rem;
+ }
+ section.section-1 .picture__box .text__box {
+  width: 60%;
+  bottom: -20rem;
+  transform: 50% 50%;
+ }
+ section.section-4 .grid {
+  grid-template-columns: 1fr;
+ }
+}
+
+/* applies to x-small devices  */
+
+@media screen and (max-width: 576px) {
+ html {
+  font-size: 10px;
+ }
 }
