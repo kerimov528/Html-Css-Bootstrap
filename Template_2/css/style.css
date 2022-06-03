@@ -4,5 +4,127 @@
  box-sizing: border-box;
 }
 
+a {
+ text-decoration: none;
+}
+img {
+ width: 100%;
+}
+
 :root {
+ --font: 'Maven Pro', sans-serif;
+ --second-font: 'Open Sans', sans-serif;
+ --green: #63894c;
+ --main-orange: #faa00a;
+ --section-bgColor: #f2f2f2;
+}
+
+/* header  */
+
+header {
+ height: max-content;
+ background: url('../img/header__bg.png');
+ padding-left: 7rem;
+}
+header div.row {
+ height: 100%;
+}
+header .header-left {
+ /* max-width: 20rem; */
+ padding: 2rem 1rem 2rem 3rem;
+}
+header .header-left h2 {
+ font-size: 3.75rem;
+ font-weight: 800;
+ margin-bottom: 2rem;
+}
+header .header-left p {
+ max-width: 90%;
+ font-style: italic;
+ line-height: 1.8;
+ font-size: 1.5rem;
+ font-weight: 400;
+}
+header .header-left button {
+ padding: 1rem 2.65rem 1.312rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ font-weight: 700;
+ font-size: 0.875rem;
+ margin-top: 4rem;
+ border-radius: 0.5rem;
+ background-color: var(--main-orange);
+ border: none;
+}
+header .header-left button:hover {
+ background-color: #fff;
+ color: var(--main-orange) !important;
+}
+header .header-right {
+ height: 35rem;
+ /* padding: 2rem 1rem 2rem 3rem; */
+ background: url('../img/h_women.jpg');
+ background-size: cover;
+ background-position: 0% 50%;
+}
+
+/* section 1  */
+
+section.section__1 {
+ height: 100vh;
+ background: url('../img/section_1_img.png');
+ background-size: cover;
+ background-position: 50% 50%;
+}
+
+/* section 2  */
+
+section.section__2 {
+ height: max-content;
+ padding: 2rem 3.5rem;
+}
+section.section__2 .container {
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: max-content;
+ gap: 1rem;
+}
+section.section__2 .container .box {
+ padding: 2rem;
+ text-align: center;
+ position: relative;
+ top: -11rem;
+}
+section.section__2 .container .box h2 {
+ font-weight: 900;
+ font-size: 3rem;
+ text-align: center;
+ line-height: 0.8;
+}
+section.section__2 .container .box h3 {
+ font-weight: 700;
+ font-size: 2.25rem;
+ line-height: 1.2;
+}
+section.section__2 .container .box p {
+ font-size: 1rem;
+ line-height: 2;
+}
+section.section__2 .container .box a {
+ border-bottom-style: solid;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ font-size: 0.875rem;
+ border-width: 2px;
+ color: #fff;
+}
+section.section__2 .container .box a:hover {
+ color: #fdd99c;
+}
+section.section__2 .container .box.box1,
+section.section__2 .container .box.box3 {
+ background-color: var(--main-orange);
+}
+section.section__2 .container .box.box2 {
+ background-color: var(--green);
 }
