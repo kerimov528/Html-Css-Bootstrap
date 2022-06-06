@@ -24,13 +24,12 @@ img {
 header {
  height: max-content;
  background: url('../img/header__bg.png');
- padding-left: 7rem;
+ padding: 2rem 0 2rem 7rem;
 }
 header div.row {
  height: 100%;
 }
 header .header-left {
- /* max-width: 20rem; */
  padding: 2rem 1rem 2rem 3rem;
 }
 header .header-left h2 {
@@ -62,7 +61,6 @@ header .header-left button:hover {
 }
 header .header-right {
  height: 35rem;
- /* padding: 2rem 1rem 2rem 3rem; */
  background: url('../img/h_women.jpg');
  background-size: cover;
  background-position: 0% 50%;
@@ -81,7 +79,7 @@ section.section__1 {
 
 section.section__2 {
  height: max-content;
- padding: 2rem 3.5rem;
+ padding: 3rem 3.5rem;
 }
 section.section__2 .container {
  grid-template-columns: repeat(3, 1fr);
@@ -99,11 +97,13 @@ section.section__2 .container .box h2 {
  font-size: 3rem;
  text-align: center;
  line-height: 0.8;
+ margin-bottom: 0.8rem;
 }
 section.section__2 .container .box h3 {
  font-weight: 700;
  font-size: 2.25rem;
  line-height: 1.2;
+ margin-bottom: 1rem;
 }
 section.section__2 .container .box p {
  font-size: 1rem;
