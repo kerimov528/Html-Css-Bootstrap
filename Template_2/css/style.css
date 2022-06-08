@@ -24,7 +24,7 @@ img {
 header {
  height: max-content;
  background: url('../img/header__bg.png');
- padding: 2rem 0 2rem 7rem;
+ padding: 3rem 0 0 7rem;
 }
 header div.row {
  height: 100%;
@@ -44,7 +44,7 @@ header .header-left p {
  font-size: 1.5rem;
  font-weight: 400;
 }
-header .header-left button {
+.btn-global {
  padding: 1rem 2.65rem 1.312rem;
  text-transform: uppercase;
  letter-spacing: 1px;
@@ -55,10 +55,11 @@ header .header-left button {
  background-color: var(--main-orange);
  border: none;
 }
-header .header-left button:hover {
+.btn-global:hover {
  background-color: #fff;
  color: var(--main-orange) !important;
 }
+
 header .header-right {
  height: 35rem;
  background: url('../img/h_women.jpg');
@@ -72,16 +73,15 @@ section.section__1 {
  height: 100vh;
  background: url('../img/section_1_img.png');
  background-size: cover;
- background-position: 50% 50%;
 }
 
 /* section 2  */
 
 section.section__2 {
  height: max-content;
- padding: 3rem 3.5rem;
 }
 section.section__2 .container {
+ height: max-content !important;
  grid-template-columns: repeat(3, 1fr);
  grid-template-rows: max-content;
  gap: 1rem;
@@ -90,7 +90,7 @@ section.section__2 .container .box {
  padding: 2rem;
  text-align: center;
  position: relative;
- top: -11rem;
+ top: -14rem;
 }
 section.section__2 .container .box h2 {
  font-weight: 900;
@@ -127,4 +127,121 @@ section.section__2 .container .box.box3 {
 }
 section.section__2 .container .box.box2 {
  background-color: var(--green);
+}
+
+/* section 3  */
+
+section.section-3 {
+ height: max-content;
+ padding: 1rem 7rem 4rem;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: max-content;
+}
+section.section-3 .img__box,
+section.section-3 .text__box {
+ width: 32rem;
+ height: 25rem;
+ padding: 1.8rem;
+ background-color: var(--main-orange);
+ position: relative;
+}
+section.section-3 .img__box::before {
+ content: '';
+ width: 3.5rem;
+ height: 80%;
+ position: absolute;
+ right: -6rem;
+ background-color: var(--green);
+}
+section.section-3 .img__box {
+ margin-right: 1rem;
+ width: 70%;
+}
+section.section-3 .img__box .img {
+ width: 21rem;
+ height: 21rem;
+ background: url('../img/man1.png');
+ background-size: cover;
+ background-position: 50% 50%;
+ border-radius: 50%;
+}
+section.section-3 .text__box {
+ background-color: transparent;
+}
+section.section-3 .text__box h3 {
+ font-size: 1.875rem;
+ font-weight: 700;
+}
+section.section-3 .text__box p {
+ font-size: 1.125rem;
+ line-height: 2;
+ margin-top: 3rem;
+}
+section.section-3 .text__box .btn-section-2 {
+ margin-top: 0;
+}
+section.section-3 .text__box .btn-section-2:hover {
+ background-color: var(--green);
+ color: #fff !important;
+}
+
+/* Media Queries  */
+
+@media screen and (max-width: 992px) {
+ html {
+  font-size: 14px;
+ }
+ header {
+  padding: 3rem 0 0 3rem;
+ }
+ header .header-right {
+  height: 45rem;
+  background-position: 50% 50%;
+ }
+ section.section__2 .container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1rem;
+ }
+ section.section-3 {
+  grid-template-columns: repeat(1, 1fr);
+  place-content: center;
+ }
+ section.section-3 .img__box,
+ section.section-3 .text__box {
+  width: 80%;
+  margin: 0 auto;
+ }
+}
+
+@media screen and (max-width: 768px) {
+ html {
+  font-size: 12px;
+ }
+ header .header-right {
+  background-position: 20% 50%;
+ }
+ section.section__1 {
+  height: 40rem;
+  background: url('../img/section_1_img.png');
+  background-size: cover;
+  background-position: 20% 50%;
+ }
+ section.section-3 .img__box {
+  width: 100%;
+ }
+ section.section-3 .img__box,
+ section.section-3 .text__box {
+  width: 100%;
+  margin: 0 auto;
+ }
+}
+
+@media screen and (max-width: 512px) {
+ html {
+  font-size: 10px;
+ }
+ section.section__2 .container {
+  grid-template-columns: repeat(1, minmax(25rem, 35rem));
+  place-content: center;
+ }
 }
