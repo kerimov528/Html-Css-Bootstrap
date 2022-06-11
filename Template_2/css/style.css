@@ -185,6 +185,64 @@ section.section-3 .text__box .btn-section-2:hover {
  color: #fff !important;
 }
 
+/* section 4  */
+
+section.section-4 {
+ height: 100vh;
+ position: relative;
+}
+section.section-4::before {
+ content: '';
+ float: left;
+ background-color: var(--main-orange);
+ width: 7rem;
+ height: 100%;
+ left: 0;
+}
+section.section-4 .container-fluid {
+ padding-right: 0;
+}
+section.section-4 .row {
+ height: 100vh;
+}
+section.section-4 .col:first-child {
+ width: 43%;
+ height: 100%;
+ background-color: #fff;
+ padding: 3rem 1.8rem 3rem 2.8rem;
+ display: flex;
+ flex-direction: column;
+ place-content: center;
+}
+section.section-4 .col:first-child h2 {
+ font-size: 3rem;
+ line-height: 1.2;
+ font-weight: 700;
+ margin-bottom: 1rem;
+}
+section.section-4 .col:first-child p {
+ line-height: 2;
+ font-size: 1.125rem;
+ position: relative;
+}
+section.section-4 .col:first-child p::after {
+ content: '';
+ width: 6rem;
+ height: 6rem;
+ border-radius: 50%;
+ background-color: var(--main-orange);
+ display: block;
+ margin-top: 3rem;
+ left: 0;
+}
+section.section-4 .col:nth-child(2) {
+ width: 57%;
+ background-color: var(--green);
+ background: url('../img/women1.png');
+ background-size: cover;
+ background-position: 50% 70%;
+}
+
 /* Media Queries  */
 
 @media screen and (max-width: 992px) {
@@ -233,6 +291,17 @@ section.section-3 .text__box .btn-section-2:hover {
  section.section-3 .text__box {
   width: 100%;
   margin: 0 auto;
+ }
+ section.section-4 .col:first-child {
+  width: 100%;
+  height: 50%;
+ }
+ section.section-4 .col:nth-child(2) {
+  width: 100%;
+  height: 50%;
+ }
+ section.section-4::before {
+  width: 5rem;
  }
 }
 
