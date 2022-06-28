@@ -246,8 +246,7 @@ section.section-4 .col:nth-child(2) {
 /* section 5  */
 
 section.section-5 {
- height: 100vh;
- padding: 5rem 0 1rem;
+ padding: 5rem 0 4rem;
 }
 section.section-5 .row .firstCol {
  width: 45%;
@@ -300,8 +299,74 @@ section.section-5 .row .secondCol .text-box li {
 /* section 6  */
 
 section.section-6 {
- height: 100vh;
+ height: max-content;
  background-color: var(--section-bgColor);
+ padding: 4rem 7rem;
+}
+
+section.section-6 .firstCol__text_box {
+ display: flex;
+ align-items: flex-start;
+}
+section.section-6 .firstCol__text_box h2 {
+ margin-right: 2rem;
+ color: var(--main-orange);
+ font-size: 3rem;
+ font-weight: 700;
+}
+section.section-6 .firstCol__text_box p {
+ font-size: 1rem;
+ line-height: 2;
+ max-width: 85%;
+}
+section.section-6 .secondCol {
+ display: flex;
+ justify-content: center;
+}
+section.section-6 .secondCol .box {
+ width: 80%;
+ height: max-content;
+ background-color: #fff;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 1rem 2rem 8rem;
+ text-align: center;
+}
+
+section.section-6 .secondCol .img__box {
+ width: 16rem;
+ height: 16rem;
+ border-radius: 50%;
+ background: url('../img/man2.png') no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+section.section-6 .secondCol h2 {
+ font-weight: 700;
+ margin: 1rem 0 2rem;
+}
+
+/* footer  */
+
+footer {
+ min-height: 70vh;
+ background: url('../img/forest.png') no-repeat;
+ background-position: center;
+ background-size: cover;
+ color: #fff;
+ flex-direction: column;
+}
+footer p,
+footer h1 {
+ max-width: 50%;
+ line-height: 2;
+ text-align: center;
+}
+footer p {
+ max-width: 40%;
+ font-size: 1.3rem;
 }
 
 /* Media Queries  */
@@ -332,6 +397,10 @@ section.section-6 {
  }
  .btm-side {
   width: 100%;
+ }
+ section.section-6 .secondCol .img__box {
+  width: 14rem;
+  height: 14rem;
  }
 }
 
@@ -377,6 +446,10 @@ section.section-6 {
  section.section-5 .row .secondCol .text-box {
   width: 100%;
  }
+ section.section-6 .secondCol .box {
+  width: 100%;
+  margin-top: 4rem;
+ }
 }
 
 @media screen and (max-width: 512px) {
@@ -386,5 +459,13 @@ section.section-6 {
  section.section__2 .container {
   grid-template-columns: repeat(1, minmax(25rem, 35rem));
   place-content: center;
+ }
+ footer p,
+ footer h1 {
+  font-size: 3rem;
+ }
+ footer p {
+  max-width: 60%;
+  font-size: 1.5rem;
  }
 }
